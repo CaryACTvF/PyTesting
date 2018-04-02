@@ -3,4 +3,11 @@ language: python
 python:
  - "3.6"
 
-script: pytest
+script: pytest -v
+
+notifications:
+    email:
+      recipients:
+        - cary.e.riina@gmail.com
+      on_success: always
+      on_failure: always
