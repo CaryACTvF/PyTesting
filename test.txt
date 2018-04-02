@@ -1,0 +1,28 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.5.2, pytest-3.5.0, py-1.5.3, pluggy-0.6.0 -- /Library/Frameworks/Python.framework/Versions/3.5/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/admin/Desktop/PyTesting, inifile:
+collecting ... collected 3 items
+
+test_calculations.py::test_add_4and5 FAILED                              [ 33%]
+test_calculations.py::test_add_6and7 FAILED                              [ 66%]
+test_calculations.py::test_multiply PASSED                               [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_add_4and5 ________________________________
+
+    def test_add_4and5():
+    	total = add(4,5)
+>   	assert total == 9
+E    assert -1 == 9
+
+test_calculations.py:5: AssertionError
+________________________________ test_add_6and7 ________________________________
+
+    def test_add_6and7():
+    	total = add(6,7)
+>   	assert total == 13
+E    assert -1 == 13
+
+test_calculations.py:9: AssertionError
+====================== 2 failed, 1 passed in 0.08 seconds ======================
