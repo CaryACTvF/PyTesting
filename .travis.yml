@@ -6,6 +6,7 @@ python:
 script: pytest -v
 
 notifications:
+    slack: sandboxactvf:YrUAl7LnH5fxYsVoKqc2Yq1C
     email:
       recipients:
         - cary.e.riina@gmail.com
